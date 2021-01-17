@@ -13,7 +13,7 @@ configureInfo.js
 /build
 
 #fonts
-/font
+/src/fonts
 
 # misc
 .DS_Store
