@@ -16,3 +16,47 @@
   font-size: 16px;
   font-weight: 400;
 }
+
+.Form {
+  max-width: 400px;
+  justify-content: center;
+}
+
+.Label {
+  line-height: 14px;
+}
+
+.sidebar {
+  max-width: 200px;
+  width: 100vw;
+  height: 100vh;
+  background-color: #121212;
+  padding: 10px;
+}
+
+.navItem {
+  display: flex;
+  flex-direction: row;
+  color: #b3b3b3;
+  background-color: #121212;
+  padding: 14px 0 14px 10px;
+}
+
+.navText:hover,
+.navIcon:hover,
+.navItem:hover {
+  color: #ffffff;
+  background-color: #535353;
+  border-radius: 5px;
+}
+
+.navText {
+  background-color: #12121200;
+  margin: auto 7px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.navIcon {
+  background-color: #12121200;
+}
