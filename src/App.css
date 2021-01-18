@@ -30,15 +30,15 @@
   max-width: 200px;
   width: 100vw;
   height: 100vh;
-  background-color: #121212;
+  background-color: #dfdfdf;
   padding: 10px;
 }
 
 .navItem {
   display: flex;
   flex-direction: row;
-  color: #b3b3b3;
-  background-color: #121212;
+  border-bottom: 1px #535353;
+  background-color: #dfdfdf;
   padding: 14px 0 14px 10px;
 }
 
@@ -51,12 +51,12 @@
 }
 
 .navText {
-  background-color: #12121200;
+  background-color: #ffffff00;
   margin: auto 7px;
   font-size: 16px;
   font-weight: 700;
 }
 
 .navIcon {
-  background-color: #12121200;
+  background-color: #ffffff00;
 }
