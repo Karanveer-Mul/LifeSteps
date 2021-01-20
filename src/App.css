@@ -1,5 +1,6 @@
 .App {
   font-family: Roboto;
+  color: #e6e8e6;
 }
 
 .title {
@@ -20,33 +21,73 @@
 .home {
   padding-top: 5vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .searchBar {
-  position: relative;
-  display: flex;
-  border-radius: 5px;
-  width: fit-content;
-  justify-content: center;
-  background-color: orchid;
-  border: 1px solid orangered;
-  padding: 5px 0 5px 7px;
+  color: #e6e8e6;
+  background-color: #816f68;
+  margin-bottom: 24px;
+  width: 575px;
+  border: 1px solid #897c80;
+  border-radius: 30px;
+}
+
+.searchBar:hover,
+.searchBar:focus {
+  box-shadow: 1px 1px 8px 1px #816f68;
+  outline: none;
+}
+
+@media only screen and (max-width: 375px) {
+  .searchBar {
+    width: 300px;
+  }
 }
 
 input {
-  font-size: 18px;
-  font-weight: 300;
-  display: inline-block;
+  font-size: 16px;
+  padding: 0 22px 0 22px;
   border: none;
-  background-color: orchid;
-}
-
-.searchIcon {
-  background-color: orchid;
-}
-
-input:focus {
   outline: none;
+
+  background-color: rgba(0, 0, 0, 0);
+  height: 36px;
+  @media only screen and (max-width: 450px) {
+    height: 24px;
+  }
+}
+
+input::placeholder {
+  color: #e6e8e6;
+}
+
+.buttons {
+  background-color: #5e4ae3;
+  border: 1px solid #897c80;
+  width: 230px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+@media only screen and (max-width: 375px) {
+  .buttons {
+    width: 270px;
+  }
+}
+
+.searchButton {
+  font-size: 16px;
+  font-weight: 700;
+  color: #e6e8e6;
+  padding: 0 22px 0 22px;
+  background: none;
+  outline: none;
+  border: none;
+  height: 36px;
+  @media only screen and (max-width: 450px) {
+    height: 24px;
+  }
 }
