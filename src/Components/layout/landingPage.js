@@ -1,27 +1,18 @@
-import { useCallback, useState } from "react";
+import { useCallback, useState, useEffect } from "react";
 import Configure_Info from "../../configureInfo";
 import React from "react";
 
 const LandingPage = () => {
-  const [Legislators, setLegislators] = useState(null);
   let States = require("../../States.json");
-  const states = () => {
-    var elm = document.getElementById("foo");
-    var df = document.createDocumentFragment();
 
-    for (var i = 0; i < States.length; i++) {
-      var option = document.createElement("option");
-      option.value = States[i].abbreviation;
-      option.appendChild(document.createTextNode(`States[i].name`));
-    }
-    elm.appendChild(df);
-  };
+  const [Legislators, setLegislators] = useState(null);
+  const [selectedState, setSelectedState] = useState(null);
 
-  const getLegislator = useCallback(async () => {
+  const getLegislator = async () => {
     var API_KEY = Configure_Info.API_KEY;
 
     const proxyurl = "https://mysterious-caverns-70248.herokuapp.com/";
-    const url = `https://www.opensecrets.org/api/?method=getLegislators&id=AS&apikey=${API_KEY}&output=json`;
+    const url = `https://www.opensecrets.org/api/?method=getLegislators&id=${selectedState}&apikey=${API_KEY}&output=json`;
     try {
       let resp = await fetch(proxyurl + url);
       resp = await resp.json();
@@ -31,11 +22,27 @@ const LandingPage = () => {
     } catch (err) {
       console.log(err);
     }
-  }, [Legislators]);
+  };
 
   return (
     <div className="container home">
-      <div>State {States[0].name}</div>
+      <div>
+        State
+        <form>
+          <select
+            defaultValue={selectedState}
+            onChange={(event) => {
+              setSelectedState(event.target.value);
+            }}
+          >
+            {States.map((state) => (
+              <option key={state.name} value={state.abbreviation}>
+                {state.name}
+              </option>
+            ))}
+          </select>
+        </form>
+      </div>
       <button className="loadButton" onClick={() => getLegislator()}>
         Legislators
       </button>
