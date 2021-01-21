@@ -1,6 +1,7 @@
+import React from "react";
 import { useCallback, useState, useEffect } from "react";
 import Configure_Info from "../../configureInfo";
-import React from "react";
+import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 
 const LandingPage = () => {
   let States = require("../../States.json");
@@ -26,8 +27,8 @@ const LandingPage = () => {
 
   return (
     <div className="container home">
-      <div>
-        State
+      <div className="State">
+        <p>State</p>
         <form>
           <select
             defaultValue={selectedState}

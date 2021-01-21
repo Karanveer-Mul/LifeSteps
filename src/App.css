@@ -26,6 +26,53 @@
   align-items: center;
 }
 
+.State {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.97em;
+  height: 50px;
+}
+
+.State p {
+  font-size: 0.97em;
+  font-weight: 400;
+  color: rgb(233, 233, 233);
+  padding-right: 14px;
+}
+
+.State form select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding: 0 24px 0 10px;
+  border: 1px solid rgb(224, 224, 224);
+  color: white;
+  font-size: 0.97em;
+  width: 350px;
+  background: url("./assets/expand_more-white-24dp.svg") no-repeat right
+    rgba(0, 0, 0, 0);
+  background-position-x: calc(100% - 10px);
+}
+
+.State form select option {
+  font-size: 0.97em;
+  font-weight: 400;
+  color: #00ffcc;
+  background-color: rgb(54, 40, 105);
+}
+
+@media only screen and (max-width: 450px) {
+  .State form select {
+    width: 220px;
+    padding: 0 35px 0 10px;
+    background-position-x: calc(100% - 10px);
+  }
+}
+
 .loadButton {
   position: relative;
   display: inline-block;
@@ -40,7 +87,7 @@
   outline: none;
   height: 50px;
   width: 180px;
-  margin: 0 auto;
+  margin: 7vh auto;
   box-shadow: 10px 10px 14px 1px rgba(0, 0, 0, 0.2);
 }
 
