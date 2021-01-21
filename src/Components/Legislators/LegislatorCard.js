@@ -9,7 +9,12 @@ const LegislatorCard = (props) => {
     <div className="legislatorCard">
       <p>
         <p
-          style={{ fontWeight: "700", padding: "7px 0 0 0", fontSize: "18px" }}
+          style={{
+            fontWeight: "700",
+            padding: "7px 0 0 0",
+            fontSize: "18px",
+            color: "#000000",
+          }}
         >
           {data.firstlast}
         </p>
