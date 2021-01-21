@@ -1,6 +1,7 @@
 import "./App.css";
 import Navbar from "./Components/layout/navbar";
 import LandingPage from "./Components/layout/landingPage";
+import Legislators from "./Components/Legislators/getLegislators";
 import { useState } from "react";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
       <Navbar />
       <LandingPage />
+      <Legislators />
     </div>
   );
 }
