@@ -1,6 +1,7 @@
 .App {
   font-family: Roboto;
   color: #e6e8e6;
+  padding-bottom: 30px;
 }
 
 .title {
@@ -33,6 +34,8 @@
   align-items: center;
   font-size: 0.97em;
   height: 50px;
+  padding-left: 10px;
+  padding-right: 50px;
 }
 
 .State p {
@@ -47,12 +50,13 @@
   -moz-appearance: none;
   height: 50px;
   border: none;
+  border-radius: 30px;
   outline: none;
-  padding: 0 24px 0 10px;
+  padding: 0 24px 0 20px;
   border: 1px solid rgb(224, 224, 224);
   color: white;
   font-size: 0.97em;
-  width: 350px;
+  width: 330px;
   background: url("./assets/expand_more-white-24dp.svg") no-repeat right
     rgba(0, 0, 0, 0);
   background-position-x: calc(100% - 10px);
@@ -87,7 +91,7 @@
   outline: none;
   height: 50px;
   width: 180px;
-  margin: 7vh auto;
+  margin: 3vh auto;
   box-shadow: 10px 10px 14px 1px rgba(0, 0, 0, 0.2);
 }
 

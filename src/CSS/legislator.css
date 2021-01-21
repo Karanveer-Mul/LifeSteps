@@ -1,0 +1,46 @@
+.LegislatorGrid {
+  margin-top: 30px;
+  max-width: 750px;
+  border-top: 1px solid rgb(214, 214, 214);
+}
+
+.legislatorCard {
+  display: inline-block;
+  background: #ffffff;
+  background-size: 18px;
+  background-position-x: calc(0% + 7px);
+  width: 173px;
+  height: 120px;
+  color: black;
+  position: relative;
+  margin: 14px 7px 0px 7px;
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+.legislatorCard p {
+  color: #000000;
+  display: inline-block;
+  font-size: 16px;
+  padding: 7px 0px 0 7px;
+  line-height: 1.5em;
+}
+
+.party {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  height: 14px;
+  width: 14px;
+
+  border-radius: 50%;
+  right: calc(100%-7px);
+}
+
+.readMoreArrow {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  right: calc(100%-7px);
+}
