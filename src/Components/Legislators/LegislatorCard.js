@@ -18,7 +18,7 @@ const LegislatorCard = (props) => {
         <br></br>
         {data.first_elected}-{date}
         <br></br>
-        <ArrowForwardIcon className="readMoreArrow" fontSize="small" />
+        <ArrowForwardIcon className="readMoreArrow" />
       </p>
       {data.party === "R" ? (
         <div className="party" style={{ background: "#fa4b54" }}></div>

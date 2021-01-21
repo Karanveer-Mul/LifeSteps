@@ -43,4 +43,6 @@
   right: 5px;
   bottom: 5px;
   right: calc(100%-7px);
+  font-size: 20px;
+  color: #1976d2;
 }
