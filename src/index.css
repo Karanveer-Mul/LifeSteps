@@ -4,10 +4,17 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
-  background: #0d0628;
 }
 body {
-  color: rgb(0, 0, 0);
+  background-image: linear-gradient(
+    to right top,
+    #6d327c,
+    #485da6,
+    #00a1ba,
+    #00bf98,
+    #36c486
+  );
+  height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
