@@ -1,11 +1,11 @@
 .App {
   font-family: Roboto;
   color: #e6e8e6;
-  padding-bottom: 30px;
+  padding: 10px 0px 30px 0px;
 }
 
 .title {
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 700;
 }
 
@@ -19,12 +19,49 @@
   font-weight: 400;
 }
 
-.home {
-  padding-top: 5vh;
+.homeContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.home {
+  padding-top: 30px;
+  width: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loadTitle {
+  font-size: 2.9em;
+  font-weight: 900;
+  text-align: center;
+  line-height: 1.2em;
+  letter-spacing: 0.04em;
+  padding-bottom: 28px;
+}
+
+@media only screen and (max-width: 600px) {
+  .loadTitle {
+    font-size: 1.8em;
+  }
+}
+
+.loadSubTitle {
+  font-size: 1.2em;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.5em;
+  padding-bottom: 28px;
+}
+
+@media only screen and (max-width: 600px) {
+  .loadSubTitle {
+    font-size: 0.9em;
+  }
 }
 
 .State {
@@ -41,7 +78,7 @@
 .State p {
   font-size: 0.97em;
   font-weight: 400;
-  color: rgb(233, 233, 233);
+  color: rgb(241, 241, 241);
   padding-right: 14px;
 }
 

@@ -35,33 +35,41 @@ const LandingPage = () => {
   };
 
   return (
-    <div className="container home">
-      <div className="State">
-        <p>State</p>
-        <form>
-          <select
-            defaultValue={selectedState}
-            onChange={(event) => {
-              setSelectedState(event.target.value);
-            }}
-          >
-            {States.map((state) => (
-              <option key={state.name} value={state.abbreviation}>
-                {state.name}
-              </option>
-            ))}
-          </select>
-        </form>
-      </div>
-      <button className="loadButton" onClick={() => getLegislator()}>
-        Legislators
-      </button>
-      {loading === true && (
-        <div className="home">
-          <img src={spinner} className="spinner" alt="loader" />
-          <p>Fetching data</p>
+    <div className="container homeContainer">
+      <div className="home">
+        <p className="loadTitle">
+          JUST ENTER A<br></br>STATE!
+        </p>
+        <p className="loadSubTitle">
+          Never waste time researching <br></br>your State Legislators
+        </p>
+        <div className="State">
+          <p>State</p>
+          <form>
+            <select
+              defaultValue={selectedState}
+              onChange={(event) => {
+                setSelectedState(event.target.value);
+              }}
+            >
+              {States.map((state) => (
+                <option key={state.name} value={state.abbreviation}>
+                  {state.name}
+                </option>
+              ))}
+            </select>
+          </form>
         </div>
-      )}
+        <button className="loadButton" onClick={() => getLegislator()}>
+          Load
+        </button>
+        {loading === true && (
+          <div className="home">
+            <img src={spinner} className="spinner" alt="loader" />
+            <p>Fetching data</p>
+          </div>
+        )}
+      </div>
       {dataLoaded === true && <DisplayLegislator Legislators={Legislators} />}
     </div>
   );

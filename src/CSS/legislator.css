@@ -1,22 +1,36 @@
 .LegislatorGrid {
-  margin-top: 30px;
-  max-width: 750px;
+  align-items: center;
+  margin-top: 116px;
+  max-width: 690px;
   border-top: 1px solid rgb(214, 214, 214);
 }
 
+@media only screen and (max-width: 450px) {
+  .LegislatorGrid {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .legislatorCard {
-  display: inline-block;
   background: #ffffff;
   background-size: 18px;
   background-position-x: calc(0% + 7px);
-  width: 173px;
+  width: 335px;
   height: 120px;
   color: black;
   position: relative;
-  margin: 14px 7px 0px 7px;
+  margin: 14px 0px 0px 0px;
   border: 1px solid white;
   border-radius: 10px;
   box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (min-width: 451px) {
+  .legislatorCard {
+    display: inline-block;
+    margin-left: 10px;
+  }
 }
 
 .legislatorCard p {
@@ -33,16 +47,20 @@
   top: 5px;
   height: 14px;
   width: 14px;
-
   border-radius: 50%;
   right: calc(100%-7px);
 }
 
-.readMoreArrow {
+.arrowDiv {
+  width: 40px;
+  height: 40px;
   position: absolute;
-  right: 5px;
-  bottom: 5px;
+  right: -5px;
+  bottom: -5px;
   right: calc(100%-7px);
+}
+
+.readMoreArrow {
   font-size: 20px;
   color: #1976d2;
 }
