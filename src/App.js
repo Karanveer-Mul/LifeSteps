@@ -7,8 +7,8 @@ import LegislatorInfo from "./Components/Legislators/LegislatorInfo";
 function App() {
   return (
     <div className="App">
-      <Navbar />
       <BrowserRouter>
+        <Navbar />
         <Switch>
           <Route exact path="/" component={LandingPage} />
           <Route exact path="/legislator/:id" component={LegislatorInfo} />

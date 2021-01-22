@@ -4,6 +4,11 @@
   padding: 10px 0px 30px 0px;
 }
 
+.links {
+  color: white;
+  text-decoration: none;
+}
+
 .title {
   font-size: 36px;
   font-weight: 700;
