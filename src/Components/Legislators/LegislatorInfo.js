@@ -83,7 +83,7 @@ const LegislatorInfo = ({ match }) => {
                 <br></br>
                 <br></br>
               </p>
-              <p style={{ fontSize: "0.83em" }}>
+              <p className="lightText">
                 First Elected: {info["@attributes"].first_elected}
                 <br></br>
                 Next Election: {info["@attributes"].next_election}
@@ -92,21 +92,46 @@ const LegislatorInfo = ({ match }) => {
             </div>
           </div>
           <div className="legislatorInfo">
-            <p className="subHeading">Top Contributors</p>
-            <div className="paraText">
-              {contributors.contributor.slice(0, 5).map((contributor) => {
-                return (
-                  <p style={{ textAlign: "left" }}>
-                    {contributor["@attributes"].org_name} $
-                    {contributor["@attributes"].total}
-                  </p>
-                );
-              })}
+            <div className="subInfo">
+              <p className="subHeading">Top Contributors</p>
+              <div className="paraText" style={{ textAlign: "left" }}>
+                {contributors.contributor.slice(0, 5).map((contributor) => {
+                  return (
+                    <div>
+                      <p className="contributors">
+                        {contributor["@attributes"].org_name}
+                      </p>{" "}
+                      <p className="subHeading contributors">
+                        ${contributor["@attributes"].total}
+                      </p>
+                    </div>
+                  );
+                })}
+              </div>
+              <p className="lightText" style={{ textAlign: "left" }}>
+                <b>Note:</b>
+                {contributors["@attributes"].notice}
+              </p>
             </div>
-            <p className="subInfo">{contributors["@attributes"].notice}</p>
           </div>
           <div className="legislatorInfo">
-            <p className="subHeading">Top Industries</p>
+            <div className="subInfo">
+              <p className="subHeading">Top Industries</p>
+              <div className="paraText" style={{ textAlign: "left" }}>
+                {industries.slice(0, 5).map((industry) => {
+                  return (
+                    <div>
+                      <p className="contributors">
+                        {industry["@attributes"].industry_name}
+                      </p>{" "}
+                      <p className="subHeading contributors">
+                        ${industry["@attributes"].total}
+                      </p>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
           </div>
         </div>
       )}

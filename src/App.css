@@ -27,6 +27,11 @@
   color: #5c5c5c;
 }
 
+.lightText {
+  font-size: "0.83em";
+  font-weight: 300;
+}
+
 .homeContainer {
   display: flex;
   flex-direction: column;

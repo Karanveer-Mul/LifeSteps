@@ -54,3 +54,7 @@
   height: auto;
   aspect-ratio: attr(width) / attr(height);
 }
+
+.contributors {
+  display: inline-block;
+}
