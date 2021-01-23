@@ -1,7 +1,7 @@
 .App {
   font-family: Roboto;
   color: #e6e8e6;
-  padding: 10px 0px 30px 0px;
+  padding: 0px 0px 30px 0px;
 }
 
 .links {
@@ -17,11 +17,14 @@
 .subHeading {
   font-size: 24px;
   font-weight: 500;
+  padding: 14px 0 14px 0;
+  color: black;
 }
 
 .paraText {
-  font-size: 16px;
+  font-size: 0.97em;
   font-weight: 400;
+  color: #5c5c5c;
 }
 
 .homeContainer {

@@ -1,15 +1,51 @@
+.legislatorData {
+  font-size: 0.97em;
+  background: white;
+  border-radius: 10px;
+  padding: 0 10px 0 10px;
+  width: 90vw;
+  max-width: 690px;
+  color: #7a7a7a;
+}
+
 .legislatorInfo {
+  padding: 10px 0 10px 0;
+  display: flex;
+  flex-direction: row;
   color: black;
   background: white;
-  width: 90vw;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #a0a0a0;
+}
+
+@media only screen and (max-width: 600px) {
+  .legislatorInfo {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.subInfo {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #7a7a7a;
+}
+
+@media only screen and (max-width: 600px) {
+  .subInfo {
+    text-align: center;
+  }
 }
 
 .imgContainer {
   position: relative;
   overflow: hidden;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
+  margin-right: 14px;
 }
 
 .profileImage {

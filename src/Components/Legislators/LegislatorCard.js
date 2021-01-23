@@ -18,7 +18,7 @@ const LegislatorCard = (props) => {
         </p>
         <br></br>@{data.twitter_id}
         <br></br>
-        {data.congress_office}
+        {data.office} - {data.congress_office}
         <br></br>
         {data.phone}
         <br></br>
