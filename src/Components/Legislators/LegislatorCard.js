@@ -1,11 +1,8 @@
 import "../../CSS/legislator.css";
-import { Link } from "react-router-dom";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 
 const LegislatorCard = (props) => {
   const data = props.data;
-  let date = new Date();
-  date = date.getFullYear();
   return (
     <div className="legislatorCard">
       <p>

@@ -7,7 +7,10 @@ const DisplayLegislator = (props) => {
   return (
     <div className="LegislatorGrid">
       {data.map((legislator) => (
-        <Link to={{ pathname: `/legislator/${legislator["@attributes"].cid}` }}>
+        <Link
+          key={legislator["@attributes"].cid}
+          to={{ pathname: `/legislator/${legislator["@attributes"].cid}` }}
+        >
           <LegislatorCard data={legislator["@attributes"]} />
         </Link>
       ))}

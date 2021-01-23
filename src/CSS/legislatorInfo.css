@@ -1,4 +1,20 @@
 .legislatorInfo {
   color: black;
   background: white;
+  width: 90vw;
+}
+
+.imgContainer {
+  position: relative;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.profileImage {
+  display: inline;
+  width: 100%;
+  height: auto;
+  aspect-ratio: attr(width) / attr(height);
 }
