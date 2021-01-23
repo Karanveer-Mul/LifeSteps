@@ -33,6 +33,7 @@ const LegislatorInfo = ({ match }) => {
       setInfo(sum_resp);
       con_resp = await con_resp.json();
       con_resp = await con_resp.response.contributors;
+
       setContributors(con_resp);
       ind_resp = await ind_resp.json();
       ind_resp = await ind_resp.response.industries.industry;
@@ -88,7 +89,7 @@ const LegislatorInfo = ({ match }) => {
               </p>
             </div>
           </div>
-          <div className="legislatorInfo">
+          <div className="legislatorInfo" style={{ display: "inline-block" }}>
             <div className="subInfo">
               <p className="subHeading">Top Contributors</p>
               <div className="paraText" style={{ textAlign: "left" }}>
@@ -105,13 +106,9 @@ const LegislatorInfo = ({ match }) => {
                   );
                 })}
               </div>
-              <p className="lightText" style={{ textAlign: "left" }}>
-                <b>Note:</b>
-                {contributors["@attributes"].notice}
-              </p>
             </div>
           </div>
-          <div className="legislatorInfo">
+          <div className="legislatorInfo" style={{ display: "inline-block" }}>
             <div className="subInfo" style={{ width: "100%" }}>
               <p className="subHeading">Top Industries</p>
               <div
@@ -133,6 +130,13 @@ const LegislatorInfo = ({ match }) => {
               </div>
             </div>
           </div>
+          <p
+            className="lightText"
+            style={{ textAlign: "left", padding: "10px 0 10px 0" }}
+          >
+            <b>Note:</b>
+            {contributors["@attributes"].notice}
+          </p>
         </div>
       )}
     </div>

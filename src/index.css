@@ -14,7 +14,8 @@ body {
     #00bf98,
     #36c486
   );
-  background-repeat: unset;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

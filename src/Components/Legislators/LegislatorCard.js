@@ -1,4 +1,5 @@
 import "../../CSS/legislator.css";
+import { Link } from "react-router-dom";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 
 const LegislatorCard = (props) => {
@@ -22,9 +23,11 @@ const LegislatorCard = (props) => {
         <br></br>
         {data.phone}
         <br></br>
-        <div className="arrowDiv">
-          <ArrowForwardIcon className="readMoreArrow" />
-        </div>
+        <Link to={{ pathname: `/legislator/${data.cid}` }}>
+          <div className="arrowDiv">
+            <ArrowForwardIcon className="readMoreArrow" />
+          </div>
+        </Link>
       </p>
       {data.party === "R" ? (
         <div className="party" style={{ background: "#fa4b54" }}></div>
