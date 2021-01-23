@@ -33,6 +33,7 @@
 }
 
 .legislatorCard p {
+  position: relative;
   color: #777777;
   display: inline-block;
   font-size: 16px;
@@ -47,19 +48,19 @@
   height: 14px;
   width: 14px;
   border-radius: 50%;
-  right: calc(100%-7px);
+  right: 7px;
 }
 
 .arrowDiv {
   width: 40px;
   height: 40px;
   position: absolute;
-  right: -5px;
+  right: -30px;
   bottom: -10px;
-  right: calc(100%-7px);
 }
 
 .readMoreArrow {
+  float: right;
   font-size: 20px;
   color: #1976d2;
 }

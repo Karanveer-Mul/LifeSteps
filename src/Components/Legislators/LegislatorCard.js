@@ -6,7 +6,7 @@ const LegislatorCard = (props) => {
   const data = props.data;
   return (
     <div className="legislatorCard">
-      <p>
+      <p style={{ width: "90%" }}>
         <p
           style={{
             fontWeight: "700",
@@ -19,7 +19,7 @@ const LegislatorCard = (props) => {
         </p>
         <br></br>@{data.twitter_id}
         <br></br>
-        {data.office} - {data.congress_office}
+        {data.office}
         <br></br>
         {data.phone}
         <br></br>
