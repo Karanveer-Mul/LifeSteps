@@ -33,9 +33,6 @@ const LegislatorInfo = ({ match }) => {
       setInfo(sum_resp);
       con_resp = await con_resp.json();
       con_resp = await con_resp.response.contributors;
-      {
-        /*grab notice from candiate @attributes and map contributor */
-      }
       setContributors(con_resp);
       ind_resp = await ind_resp.json();
       ind_resp = await ind_resp.response.industries.industry;
@@ -115,9 +112,12 @@ const LegislatorInfo = ({ match }) => {
             </div>
           </div>
           <div className="legislatorInfo">
-            <div className="subInfo">
+            <div className="subInfo" style={{ width: "100%" }}>
               <p className="subHeading">Top Industries</p>
-              <div className="paraText" style={{ textAlign: "left" }}>
+              <div
+                className="paraText"
+                style={{ width: "100%", textAlign: "left" }}
+              >
                 {industries.slice(0, 5).map((industry) => {
                   return (
                     <div>

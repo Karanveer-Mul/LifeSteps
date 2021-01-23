@@ -39,6 +39,13 @@
   }
 }
 
+.indusInfo {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #7a7a7a;
+}
+
 .imgContainer {
   position: relative;
   overflow: hidden;
