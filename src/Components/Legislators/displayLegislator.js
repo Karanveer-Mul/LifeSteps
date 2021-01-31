@@ -1,4 +1,4 @@
-import LegislatorCard from "./LegislatorCard";
+import LegislatorCard from "./legislatorCard";
 import "../../CSS/legislator.css";
 
 const DisplayLegislator = (props) => {

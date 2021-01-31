@@ -44,7 +44,6 @@ const LandingPage = () => {
           Never waste time researching <br></br>your State Legislators
         </p>
         <div className="State">
-          <p>State</p>
           <form>
             <select
               defaultValue={selectedState}

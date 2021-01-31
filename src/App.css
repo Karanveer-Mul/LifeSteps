@@ -4,9 +4,48 @@
   padding: 0px 0px 30px 0px;
 }
 
-.links {
-  color: white;
+a,
+a:hover {
+  color: #000;
   text-decoration: none;
+}
+
+.navbar {
+}
+
+li {
+  display: inline-block;
+  position: relative;
+  margin: 10px 10px 10px 10px;
+}
+
+li:last-child {
+  margin-right: 0;
+}
+
+li:after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
+
+li:hover:after {
+  width: 100%;
+  background: rgb(255, 255, 255);
+}
+
+.navLink {
+  color: #e6e8e6;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.navLink:hover {
+  animation: name duration timing-function delay iteration-count direction
+    fill-mode;
 }
 
 .title {
@@ -84,8 +123,6 @@
   align-items: center;
   font-size: 0.97em;
   height: 50px;
-  padding-left: 10px;
-  padding-right: 50px;
 }
 
 .State p {
