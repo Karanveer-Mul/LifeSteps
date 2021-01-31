@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import Configure_Info from "../../configureInfo";
-import spinner from "../../assets/spinner.svg";
+import Spinner from "./spinner";
 import "../../CSS/spinner.css";
 import DisplayLegislator from "../Legislators/displayLegislator";
 
@@ -62,12 +62,7 @@ const LandingPage = () => {
         <button className="loadButton" onClick={() => getLegislator()}>
           Load
         </button>
-        {loading === true && (
-          <div className="home">
-            <img src={spinner} className="spinner" alt="loader" />
-            <p>Fetching data</p>
-          </div>
-        )}
+        {loading === true && <Spinner />}
       </div>
       {dataLoaded === true && <DisplayLegislator Legislators={Legislators} />}
     </div>

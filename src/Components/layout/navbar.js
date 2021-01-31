@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "../../CSS/orgs.css";
 
 const Navbar = () => {
   return (
@@ -15,7 +16,7 @@ const Navbar = () => {
         </li>
         <li>
           <Link to="/" className="navLink">
-            Home
+            Legislators
           </Link>
         </li>
         <li>

@@ -1,5 +1,5 @@
 import Configure_Info from "../../configureInfo";
-import spinner from "../../assets/spinner.svg";
+import Spinner from "../layout/spinner";
 import { useEffect, useState } from "react";
 import LegislatorBar from "./legislatorBar";
 import "../../CSS/legislatorInfo.css";
@@ -47,12 +47,7 @@ const LegislatorInfo = ({ match }) => {
   }, [API_KEY, c_id]);
 
   if (loading) {
-    return (
-      <div className="home" style={{ height: "80vh" }}>
-        <img src={spinner} className="spinner" alt="loader" />
-        <p>Fetching data</p>
-      </div>
-    );
+    return <Spinner />;
   }
 
   const getName = () => {
