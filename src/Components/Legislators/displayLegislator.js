@@ -1,6 +1,5 @@
 import LegislatorCard from "./LegislatorCard";
 import "../../CSS/legislator.css";
-import { Link } from "react-router-dom";
 
 const DisplayLegislator = (props) => {
   const data = props.Legislators;
